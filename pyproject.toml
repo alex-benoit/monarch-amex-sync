@@ -1,0 +1,19 @@
+[project]
+name = "monarch-amex-sync"
+version = "0.1.0"
+description = "Helper script to keep Monarch Money Amex main/additional cards in sync."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = [
+  "requests>=2.31.0,<3.0.0",
+  "python-dotenv>=1.0.0,<2.0.0",
+]
+
+[project.scripts]
+sync-amex = "sync_amex:main"
+
+[tool.uv]
+package = true
+
+
